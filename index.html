@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demon Souls Death Count</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+</head>
+<body>
+<div id="tallycounter">
+	<p id="count">0</p>
+	<div id="themes">
+	</div>
+	<hr/>
+	<h1>Cookie stuff goes here</h1>
+	<h4>save profile</h4>
+	<form action="javascript: $.fn.setCookie();">
+		<input type="text" placeholder="game-1" id="saveCookieProfile" name="fname">
+		<input type="submit" value="Submit">
+	</form>
+	<h4>load profile</h4>
+	<form action="javascript: $.fn.getCookie();">
+		<input type="text" placeholder="game-1" id="loadCookieProfile" name="fname">
+		<input type="submit" value="Submit">
+	</form>
+	<h4>reset cookie</h4>
+	<button id="cookiereset" type="button">Reset Cookie (if needed)</button>
+	<hr/>
+	<h1>Set the counter to your own start number</h1>
+	<form action="javascript: $.fn.updateCounterFromTextInput();">
+		<input type="number" placeholder="1" id="counterValue" name="fname">
+		<input type="submit" value="Submit">
+	</form>
+</div>
+<hr/>
+<hr/>
+<div id="changelog">
+	<h1>Changelog</h1>
+	<p>version 0.4: <br/>- Added Cookies so it remembers the count<br/>
+		- Added input box for easy high number navigation<br/>
+		- Added custom cookie values for save/loading<br/>
+	</p>
+</div>
+<hr/>
+<div id="todolist">
+	<h1>To-do</h1>
+	<p><del>- Added Cookies so it remembers the count</del><br/>
+	<del>- Add input form so you can easily go to the wanted number</del><br/>
+	<del>- A form that let's users create their own id'ed cookies (for save/load purpose)</del><br/>
+	- Output a list of all saved cookies/profiles for fast loading<br/>
+	- Implement a design <br/>
+	- Implement custom color schemes<br/>
+	<del>- Clean up the code (it's not that much)</del>
+	</p>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/colorpicker.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+
+</body>	
+</html>
